@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study in the US - PSE Consultant</title>
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+<style>
+    /* Define a primary red color for easy changes */
+    :root {
+        --primary-red: #cc0000; /* A strong, classic red */
+        --light-red: #ff3333;
+        --dark-red: #990000;
+        --accent-color: var(--primary-red);
+    }
+
+    /* General Body Styles - No change needed */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    /* Hero Section */
+    .hero-uk {
+        width: 100%;
+        height: 350px;
+        background-image: url('4RXPPB5G2RCHHKUAR3CLHFABYE.avif	');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero-uk::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Dark overlay - No change needed */
+        z-index: 1;
+    }
+
+    .hero-uk .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-uk .start-journey {
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        /* CHANGED: Orange to Red */
+        background-color: var(--primary-red);
+        padding: 5px 10px;
+        border-radius: 3px;
+        display: inline-block;
+    }
+
+    .hero-uk h1 {
+        font-size: 2.8em;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    /* Main Info Section - No change needed */
+    .info-section {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .info-section p {
+        max-width: 900px;
+        margin: 20px auto;
+        font-size: 1.05em;
+        color: #555;
+    }
+
+    /* Why Choose US Section */
+    .why-choose-uk {
+        background-color: #f9f9f9;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .why-choose-uk h2, .how-can-help h2 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .why-choose-uk h2::after, .how-can-help h2::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 60px;
+        height: 3px;
+        /* CHANGED: Green underline to Red underline */
+        background-color: var(--primary-red);
+    }
+
+    .features-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .feature-item {
+        flex: 1;
+        min-width: 200px;
+        max-width: 250px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .feature-item img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .feature-item h3 {
+        font-size: 1.2em;
+        /* CHANGED: Green for feature titles to Red */
+        color: var(--primary-red);
+        margin: 0;
+    }
+
+    /* How Can We Help Section - No change needed */
+    .how-can-help {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .help-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .help-item {
+        flex: 1;
+        min-width: 200px;
+        max-width: 250px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .help-item img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .help-item h3 {
+        font-size: 1.2em;
+        color: #333;
+        margin: 0;
+    }
+
+    /* Bottom Hero Section (You Can Achieve Your Dream) */
+    .bottom-hero {
+        width: 100%;
+        height: 300px;
+        background-image: url('Statue-of-Liberty-Island-New-York-Bay.webp');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-align: left;
+        position: relative;
+    }
+
+    .bottom-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6); /* Darker overlay - No change needed */
+        z-index: 1;
+    }
+
+    .bottom-hero .content {
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+
+    .bottom-hero h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .bottom-hero p {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+
+    .bottom-hero .book-button {
+        /* CHANGED: Blue button to Red button */
+        background-color: var(--primary-red);
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .bottom-hero .book-button:hover {
+        /* CHANGED: Blue hover to Darker Red hover */
+        background-color: var(--dark-red);
+    }
+
+    /* University Logos (Top of Bottom Hero) - No change needed */
+    .university-logos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+        text-align: center;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        color: #ccc;
+        font-size: 0.9em;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 60px 0;
+        text-align: left;
+    }
+
+    .faq-section h2 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 40px;
+    }
+
+    .faq-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .faq-left {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .faq-left h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .faq-left .read-more-button {
+        /* CHANGED: Green button to Red button */
+        background-color: var(--primary-red);
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .faq-left .read-more-button:hover {
+        /* CHANGED: Green hover to Darker Red hover */
+        background-color: var(--dark-red);
+    }
+
+    .faq-right {
+        flex: 2;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .faq-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .faq-question {
+        background-color: #f5f5f5;
+        padding: 15px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        color: #444;
+    }
+
+    .faq-question .arrow {
+        font-size: 1.2em;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+        padding: 15px 20px;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+        display: none;
+    }
+
+    /* Responsive Adjustments - No change needed */
+    @media (max-width: 900px) {
+        .container {
+            width: 90%;
+        }
+        .hero-uk h1 {
+            font-size: 2em;
+        }
+        .features-grid, .help-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature-item, .help-item {
+            max-width: 90%;
+        }
+        .bottom-hero .content {
+            padding: 30px;
+            text-align: center;
+        }
+        .faq-content {
+            flex-direction: column;
+            align-items: center;
+        }
+        .faq-left, .faq-right {
+            min-width: unset;
+            width: 100%;
+        }
+        .faq-section h2 {
+            text-align: center;
+        }
+        .faq-left h3 {
+            text-align: center;
+        }
+        .faq-left .read-more-button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="hero-uk">
+        <div class="content">
+            <span class="start-journey">LAND OF OPPORTUNITIES</span>
+            <h1>Study in the US</h1>
+        </div>
+    </div>
+
+    <div class="container info-section">
+        <p>More and more students from Pakistan have come to the United States in recent years to pursue higher education. In the United States, students may choose from a wide array of undergraduate and graduate programs at prestigious universities. We all want to study in USA from Pakistan, right? Over 7,000 Pakistani students, a 5.6% increase from 2019, will study in the United States in 2020, according to the Institute of International Education’s Open Doors Report. Students, who want to study in USA from Pakistan, will find that tuition varies widely by region, major, and academic year. The average cost of a year of undergraduate study in the United States is between $20,000 and $50,000, with the cost of a master’s degree ranging from $30,000 to $70,000. Tuition may be more expensive at prestigious schools.In the United States, education costs more than just tuition. Students in Pakistan also need a budget for non-educational costs, including rent, groceries, transportation, and medical care. Costs like this vary widely based on factors including the student’s location and way of life.
+
+How to study in USA from Pakistan is still a significant concern. Need help to find the study in USA consultants? No worries! As the number of international students looking to study in the United States rises, PSE Consultant is committed to helping Pakistani students find the funding and support they need to move across the globe. We know prospective students from Pakistan want timely and reliable data on the price of higher education in the United States.
+
+We’ve covered you, from the application process and visas to cultural expectations and student life in various US locations. Contact us immediately if you want to study in USA from Pakistan and further your education and career in the United States.</p>
+    </div>
+
+<div class="why-choose-uk">
+    <div class="container">
+        <h2>Why Choose US?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-graduation-cap fa-4x" style="color: #FFD700;"></i>
+                <h3>High Quality Education</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-chalkboard-user fa-4x" style="color: #FFD700;"></i>
+                <h3>High Standards of Teaching</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-award fa-4x" style="color: #FFD700;"></i>
+                <h3>Multiple Scholarship Opportunities</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-book-open fa-4x" style="color: #FFD700;"></i>
+                <h3>Variety of courses</h3>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="how-can-help">
+    <div class="container">
+        <h2>How can we help you ?</h2>
+        <div class="help-grid">
+            <div class="help-item">
+                <i class="fa-solid fa-passport fa-5x" style="color: #333333; background-color: #E6E6FA; padding: 10px; border-radius: 50%;"></i>
+                <h3>Visa Guidance</h3>
+            </div>
+            <div class="help-item">
+                <i class="fa-solid fa-user-check fa-5x" style="color: #333333; background-color: #E6E6FA; padding: 10px; border-radius: 50%;"></i>
+                <h3>Profile Assessment</h3>
+            </div>
+            <div class="help-item">
+                <i class="fa-solid fa-magnifying-glass fa-5x" style="color: #333333; background-color: #E6E6FA; padding: 10px; border-radius: 50%;"></i>
+                <h3>Finding The Right Degree</h3>
+            </div>
+            <div class="help-item">
+                <i class="fa-solid fa-pen-to-square fa-5x" style="color: #333333; background-color: #E6E6FA; padding: 10px; border-radius: 50%;"></i>
+                <h3>SOP Writing Guidance</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="bottom-hero">
+        <div class="university-logos">
+            <span>Nottingham Trent University</span>
+            <span>University of Portsmouth</span>
+            <span>University of Liverpool</span>
+        </div>
+        <div class="content">
+            <h2>You can achieve your dream.</h2>
+            <p>Book your free consultation and meet with our experts to explore your options.</p>
+            <a href="mailto:consultantpse@gmail.com?subject=Book%20An%20Appointment&body=Dear%20Consultant%20PSE%2C%0A%0AI%20am%20writing%20to%20formally%20request%20to%20schedule%20an%20appointment%20with%20you.%0A%0APlease%20let%20me%20know%20what%20dates%20and%20times%20you%20have%20available%20in%20the%20coming%20weeks%20for%20a%20brief%20meeting%20to%20discuss%20%5Bbriefly%20state%20your%20topic%20or%20need%20here%5D.%0A%0AI%20am%20flexible%20and%20can%20work%20around%20your%20schedule.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%0A%0ASincerely%2C%0A%5BYour%20Name%5D" class="book-button">Book an appointment</a>
+        </div>
+    </div>
+
+ <div class="faq-section">
+        <div class="container">
+            <h2>Frequently asked questions</h2>
+            <div class="faq-content">
+                <div class="faq-left">
+                    <h3>Still Have a questions?</h3>
+                    <a href="index.html" class="read-more-button">Read More</a>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <div class="faq-question">How can a Pakistani student apply to study in the US? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The application process is four-fold: **1. University Admission:** Select a course and university, meet academic and English requirements (e.g., IELTS), and submit your application (via UCAS for undergraduate, direct for postgraduate). **2. Receive CAS:** Accept the unconditional offer and pay any required deposit to get your **Confirmation of Acceptance for Studies (CAS)**. **3. Financial Readiness:** Gather proof of funds for tuition and living costs, ensuring the money has been held for 28 days. **4. Visa Application:** Complete the online Student visa application, pay the visa fee and Immigration Health Surcharge (IHS), and attend your biometric appointment.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What are the requirements for a US student visa for Pakistani students? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The US Student Visa (Student Route) is points-based, requiring you to meet three key criteria: **1. Sponsorship:** Receive a **CAS** from a licensed student sponsor (70 points). **2. Financial Requirement:** Demonstrate sufficient funds for tuition and living costs, held for at least 28 days (10 points). **3. English Language:** Prove English proficiency (often included in the CAS, otherwise through an approved test like IELTS for USVI) (10 points). Additionally, a **Tuberculosis (TB) test certificate** from a USVI-approved clinic is mandatory.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How much does it cost to study in the US for Pakistani students? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">Costs are split into three areas: **1. Tuition Fees:** Varies by university and course, typically ranging from **£11,400 to £38,000 per year**. **2. Living Expenses (Maintenance Funds):** USVI requires you to show funds for the first 9 months: **£1,334 per month for London** ($\mathbf{£12,006}$ total) or **£1,023 per month for outside London** ($\mathbf{£9,207}$ total). **3. Visa Costs:** The standard visa application fee is $\mathbf{£524}$ (from outside the US), plus the mandatory **Immigration Health Surcharge (IHS)**, which is **£776 per year** of study.</div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">Is IELTS required to study in the US for Pakistani students? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">**Not always.** While IELTS (specifically **IELTS for USVI**) is the most common way to prove English proficiency for the visa, you may be exempt if your university is a Higher Education Institution (HEI) and accepts one of the following alternatives: **1. Medium of Instruction (MOI) Letter:** If your previous degree was taught entirely in English. **2. Internal University Test:** Some universities conduct their own short English test. **3. Recognized Alternatives:** Such as Duolingo English Test (DET) or PTE, depending on the university's specific policy. We recommend verifying the acceptance criteria with your chosen university.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Which are the top universities in the US for Pakistani students? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The 'top' university depends on your subject and academic profile. Globally top-ranked institutions include the **University of Oxford**, **University of Cambridge**, **Imperial College London**, and **UCL (University College London)**. Other highly regarded universities that are very popular among Pakistani students due to their strong academic reputation and wide course availability are the **University of Manchester**, **King's College London**, and the **University of Edinburgh**. We advise focusing on universities with the best departmental ranking for your specific field of study.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the US student visa success rate for Pakistani students? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The official US student visa grant rate remains exceptionally high. Latest data indicates the success rate for the Student route is generally around **98% to 99%** for all nationalities, including Pakistani students, provided the applicant meets all necessary financial, CAS, and documentation requirements. Refusals are primarily due to incomplete documentation, insufficient funds, or failure to demonstrate a genuine intention to study (GTS). Proper preparation is key to ensuring a successful application.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the minimum bank statement required for a US student visa? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The required amount is the sum of: **1. Remaining First Year Tuition Fee** (as stated on your CAS), **PLUS 2. Living Costs (Maintenance Funds):** $\mathbf{£12,006}$ for London study (for 9 months) or $\mathbf{£9,207}$ for outside London study (for 9 months). The full total amount must be held in your (or your financial sponsor's) account for a continuous period of **at least 28 consecutive days**, ending no more than 31 days before your visa application date.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How long does it take to process a US student visa from Pakistan? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The **standard processing time is typically 3 weeks (15 working days)** from the date of your biometric appointment. During peak seasons (July-September), this may take longer. You have the option to use paid services to expedite the process: the **Priority Service** aims for a decision within 5 working days, and the **Super Priority Service** aims for a decision by the end of the next working day.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the CAS letter and how do I get it? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The **CAS (Confirmation of Acceptance for Studies)** is a unique electronic reference number issued by your US university (a licensed student sponsor) that confirms you have an unconditional offer for a course of study. **To get it,** you must formally accept your university's unconditional offer, meet all remaining conditions (e.g., academic requirements, English proficiency, deposit payment), and satisfy the university's internal compliance checks (which may include a credibility interview). Once issued, you must use the CAS number to submit your visa application within six months.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What documents are needed for a US student visa? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">You will need to submit the following mandatory documents: **1. Valid Passport, 2. CAS reference number, 3. Proof of Financial Funds** (Bank Statement or Loan Letter, demonstrating 28-day holding), **4. Tuberculosis (TB) Test Certificate, 5. Academic Certificates** (as listed on your CAS), **6. English Language Test Results** (if not covered by CAS), **7. Proof of Relationship and Consent** (if you are under 18 or using parental funds). All documents not in English must be submitted with a certified translation.</div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">How can I get admission into US universities from Pakistan? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">The most effective strategy is to align your qualifications precisely with the university's requirements. This involves: **1. Academic Alignment:** Ensuring your HSSC/Intermediate or Bachelor's degree grades meet the course's minimum entry criteria. **2. English Proficiency:** Achieving the required IELTS/PTE score or securing an MOI letter. **3. Crafting a Strong Personal Statement:** Articulating your genuine interest, academic background, and clear career progression goals. **4. Submitting Complete Documentation:** Providing all transcripts, references, and a well-structured CV (for postgraduate applications). Working with us ensures targeted university selection and meticulous application review before submission.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How can PSE Consultant help me with the US study visa process? <span class="arrow">&#9660;</span></div>
+                        <div class="faq-answer">As your dedicated consultancy, we provide end-to-end support to maximize your success: **1. University Placement:** Strategic shortlisting and application submission. **2. CAS Issuance Guidance:** Ensuring you meet all university compliance requirements (including interview preparation). **3. Financial Documentation Review:** Meticulously checking your bank statements to guarantee 28-day fund maturation and USVI compliance. **4. Visa Application and Submission:** Completing the online visa form, IHS payment, and managing the appointment booking. **5. Credibility Interview Preparation:** Providing targeted coaching for the Genuine Student (GS) interview, if required, to ensure clear intent is demonstrated.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const arrow = question.querySelector('.arrow');
+
+                    // Toggle active state for current item
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        arrow.style.transform = 'rotate(0deg)';
+                    } else {
+                        // Close other open answers
+                        faqQuestions.forEach(otherQuestion => {
+                            if (otherQuestion !== question) {
+                                otherQuestion.nextElementSibling.style.display = 'none';
+                                otherQuestion.querySelector('.arrow').style.transform = 'rotate(0deg)';
+                            }
+                        });
+                        answer.style.display = 'block';
+                        arrow.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
