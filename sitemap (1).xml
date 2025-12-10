@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main pages -->
+  <url>
+    <loc>https://pseconsultant.com/</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pseconsultant.com/study-in-uk.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://pseconsultant.com/study-in-us.html</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Images -->
+  <url>
+    <loc>https://pseconsultant.com/491a48e0-1db9-11f0-a3df-cd11636dc668.jpg.webp</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/4RXPPB5G2RCHHKUAR3CLHFABYE.avif</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/Statue-of-Liberty-Island-New-York-Bay.webp</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/header-ups.jpg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/image_processing20220509-4-1xn0oze.jpg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/istockphoto-1177176016-612x612.jpg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/logo.jpg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/pse-college-nursing.png</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/team_member_1.jpg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/team_member_2.png</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/team_member_3.svg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/team_member_4.png</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/toronto-skyline-from-park_649448-3488.jpg</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pseconsultant.com/view-big-ben-westminster-bridge-sunny-day-united-kingdom.avif</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Docs -->
+  <url>
+    <loc>https://pseconsultant.com/info.docx</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Styles -->
+  <url>
+    <loc>https://pseconsultant.com/styles.css</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
